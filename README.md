@@ -59,9 +59,7 @@ Loci (hg38): PDX1, NEUROG3, MAFA, PAX6, NKX6-1, NEUROD1, PCSK1, PCSK2, ABCC8/KCN
 ## Data and methods
 
 - **Source:** Zhong et al., *Gut* 2025 (doi:10.1101/2024.09.22.24314165); SRA BioProject PRJNA1041452. HPDE6-E6E7: H3K4me3, H3K27ac, H3K4me1, H3K27me3 ChIP-seq and 2% input (2 replicates each, single-end 75 bp) and ATAC-seq (2 replicates, paired-end 150 bp).
-- **Processing (Galaxy, usegalaxy.org):** fasterq-dump (SRA Toolkit 3.1.1) → Bowtie2 2.5.5 to hg38 canonical (ATAC: -X 2000) → deepTools bamCoverage 4.0.0 (CPM, 50-bp bins, MAPQ ≥ 30; ChIP reads extended to 200 bp) → MACS2 2.2.9.1 (pooled replicates vs pooled input, q < 0.05; broad mode for H3K27me3/H3K4me1, narrow for H3K4me3/H3K27ac; ATAC in BAMPE mode without control).
-- **Annotation:** Ensembl GRCh38 canonical transcripts.
-- **QC:** alignment rate 98–99 %; replicate Pearson r = 0.88–0.99 (1-kb bins within plotted loci).
+- **Processing (Galaxy, usegalaxy.org)
 - **Plotting:** Python 3 (pandas, NumPy, matplotlib).
 
 ## Caveats
@@ -69,8 +67,6 @@ Loci (hg38): PDX1, NEUROG3, MAFA, PAX6, NKX6-1, NEUROD1, PCSK1, PCSK2, ABCC8/KCN
 - Plotted windows are 30–150 kb. They will be widened to whole gene ± 50–100 kb to capture all H3K27me3 peaks across each locus.
 - ATAC-seq currently uses replicate 1 only; ATAC peaks are pending.
 - No DNA methylation data are available for HPDE in this dataset; a methylation track still needs a source.
-- State calls for genes with weak H3K27me3 (PDX1, MAFA, KCNJ11) are threshold-sensitive. "Bivalent" from bulk ChIP cannot distinguish true co-occupancy from mixed cell populations.
-- Signal tracks are CPM without input subtraction.
 - HPDE6-E6E7 is an immortalised line and may differ from primary ductal cells.
 
 ## Next steps

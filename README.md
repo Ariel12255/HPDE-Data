@@ -78,4 +78,3 @@ Loci (hg38): PDX1, NEUROG3, MAFA, PAX6, NKX6-1, NEUROD1, PCSK1, PCSK2, ABCC8/KCN
 1. Widen windows and quantify H3K27me3 per locus (number of peaks, % of locus covered, total signal).
 2. Relate each downstream gene's epigenetic state to its induction level after CRISPRa of PDX1 / NEUROG3 / MAFA.
 3. Add a DNA methylation track.
-4. Optional: add H3K27ac HiChIP (GSE245484) to check physical contacts between loci.

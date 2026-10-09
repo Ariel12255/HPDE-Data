@@ -59,7 +59,7 @@ Loci (hg38): PDX1, NEUROG3, MAFA, PAX6, NKX6-1, NEUROD1, PCSK1, PCSK2, ABCC8/KCN
 ## Data and methods
 
 - **Source:** Zhong et al., *Gut* 2025 (doi:10.1101/2024.09.22.24314165); SRA BioProject PRJNA1041452. HPDE6-E6E7: H3K4me3, H3K27ac, H3K4me1, H3K27me3 ChIP-seq and 2% input (2 replicates each, single-end 75 bp) and ATAC-seq (2 replicates, paired-end 150 bp).
-- **Processing (Galaxy, usegalaxy.org)
+- **Processing** (Galaxy, usegalaxy.org)
 - **Plotting:** Python 3 (pandas, NumPy, matplotlib).
 
 ## Caveats

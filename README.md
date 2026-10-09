@@ -2,7 +2,6 @@
 
 Genome-browser-style chromatin profiles for the target genes (PDX1, NEUROG3, MAFA and their downstream genes) in the normal-derived human pancreatic ductal epithelial cell line HPDE6-E6E7, plus GAPDH and ACTB as positive controls. Pilot analysis on public data; the pipeline can be re-run on lab data.
 
-Prepared by Junyi Mei, October 2026.
 
 ## Folder contents
 
